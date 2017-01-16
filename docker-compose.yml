@@ -1,0 +1,16 @@
+version: "2"
+services:
+  aplicacao:
+    build: Stack/Node
+    command: bash -c "npm install; nodemon app.js"
+    volumes:
+      - ./app/:/usr/src/app
+    ports:
+      - "8080:8080"
+
+  mongo:
+    image: mongo:3.0.4
+    ports:
+      - "27017:27017"
+    volumes:
+      - './Stack/Mongo/data:/data/db'
