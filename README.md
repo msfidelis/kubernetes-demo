@@ -9,9 +9,13 @@ docker-compose build && docker-compose up;
 
 # teste
 
-# ProduÃ§Ã£o
+# Produção
 
 ## Buildando a imagem
+
+```
+docker login
+```
 
 ```
 docker build -t . msfidelis/KubeNode:1.0

@@ -1,8 +1,8 @@
 var app = require('../configs/expressConfig')();
 var request = require('supertest')(app);
 
-describe('localDatabaseTest', function () {
-
+describe('localDatabseTest', function () {
+  
   /**
   * Espera um erro de Bad Request por Cadastrar sem Titulo
   * @type {String}
