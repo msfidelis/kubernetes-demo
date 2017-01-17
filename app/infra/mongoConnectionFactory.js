@@ -14,9 +14,7 @@ var connectMongo = function(){
   } else {
     var url = 'mongodb://mongo:2700/api';
   }
-
-  return mongo.connect(url)
-
+  return mongo.createConnection(url)
 };
 
 module.exports = function(){
